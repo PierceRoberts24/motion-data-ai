@@ -1,7 +1,7 @@
 import pandas as pd
 
-rawdata = './data/HomeIntellex_1.csv'
-outpath = './data/HomeIntellex_1.parquet'
+rawdata = './data/sensordata.csv'
+outpath = './data/sensordata.parquet'
 
 colnames = ['status', 'date', 'time', 'sensor']
 df = pd.read_csv(rawdata, header=None, names=colnames)
