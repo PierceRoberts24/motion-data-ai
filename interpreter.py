@@ -36,7 +36,7 @@ def get_activities(data, step = 1):
     # Return the activities summary
     return(df.to_dict('records'))
 
-data_location = './data/HomeIntellex_1.parquet'
+data_location = './data/sensordata.parquet'
 
 db = duckdb.connect()
 db.execute(f"CREATE VIEW subject1 AS SELECT * FROM read_parquet('{data_location}')")
